@@ -35,8 +35,8 @@ public class GeneticAlgorithm {
         ArrayList<Item> items = new ArrayList<Item>();
         Scanner fileIn = new Scanner(new File(filename));
         fileIn.useDelimiter(",|\\n");
-        double weight;
-        int value;
+        double weight; //in pounds
+        int value; //dollar amount each item is worth 
         while (fileIn.hasNext()) {
             String label = fileIn.next();
             weight = Double.parseDouble(fileIn.next());
