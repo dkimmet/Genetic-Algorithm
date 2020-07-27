@@ -9,8 +9,6 @@ import java.util.Random;
  */
 public class Chromosome extends ArrayList<Item> implements Comparable<Chromosome> {
 
-    public static long dummy = 0; // this is a class field
-
     private static Random rng; //Used for random number generation
 
     public Chromosome() { //no arg constructor
@@ -113,10 +111,7 @@ public class Chromosome extends ArrayList<Item> implements Comparable<Chromosome
         double totalWeight = 0;
         int totalValue = 0;
 
-        dummy = 0;
-        for (int i = 0; i < this.size() * 1000; i++) {
-            dummy += i;
-        }
+     
 
         for (Item i : this) {
             /*
